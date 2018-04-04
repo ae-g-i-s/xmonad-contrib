@@ -32,7 +32,7 @@ import XMonad.Layout.Grid
 import XMonad.Layout.IndependentScreens
 import XMonad.Layout.Magnifier
 import XMonad.Layout.NoBorders
-import XMonad.Util.Dzen hiding (x, y)
+import XMonad.Util.Dzen hiding (x, y, lines)
 import XMonad.Util.SpawnOnce
 -- }}}
 -- volume {{{
