@@ -88,6 +88,13 @@
     Also provides the `repeatableAction` helper function which can be used to
     build actions that can be repeated while a modifier key is held down.
 
+  * `XMonad.Prompt.FuzzyMatch`
+
+    Provides a predicate 'fuzzyMatch' that is much more lenient in matching
+    completions in XMonad.Prompt than the default prefix match.  Also provides
+    a function 'fuzzySort' that allows sorting the fuzzy matches by "how well"
+    they match.
+
   * `XMonad.Utils.SessionStart`
 
     A new module that allows to query if this is the first time xmonad is
@@ -127,6 +134,11 @@
 
     Extended the sendMessage interface with `ModifyGaps` to allow arbitrary
     modifications to the `GapSpec`.
+
+  * `XMonad.Layout.Groups`
+
+    Added a new `ModifyX` message type that allows the modifying
+    function to return values in the `X` monad.
 
   * `XMonad.Actions.Navigation2D`
 
@@ -238,6 +250,13 @@
     - Added a new function `dzenWithFlags` which allows specifying the arguments
     passed to `dzen2` invocation. The behaviour of current `dzen` function is
     unchanged.
+
+  * `XMonad.Util.Dzen`
+
+    - Now provides functions `fgColor` and `bgColor` to specify foreground and
+    background color, `align` and `slaveAlign` to set text alignment, and
+    `lineCount` to enable a second (slave) window that displays lines beyond
+    the initial (title) one.
 
 ## 0.13 (February 10, 2017)
 
